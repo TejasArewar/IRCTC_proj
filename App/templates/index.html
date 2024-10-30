@@ -1,0 +1,222 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railways</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/366a5ba087.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            background-image: url("{% static 'train_image.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+        }
+
+        .header {
+            background-color: #3a96f7;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .navbar {
+            width: 100%;
+        }
+
+        .card {
+            background: transparent;
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+            color: white;
+        }
+
+        .footer {
+            background-color: gray;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 100px;
+            font-family: georgia, serif;
+            text-align: center;
+
+        }
+
+        .form-section {
+            padding: 40px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: rgba(248, 249, 250, 0.9);
+            z-index: 1;
+            position: relative;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            width: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="" style="font-weight: bold;">
+                <img src="{% static 'IRCTC_logo.png' %}" style="height: 50px; width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="margin-left: 27%;">
+                <h2><b> <i class="fa-solid fa-train"></i> || राष्ट्र की जीवन रेखा || <i
+                            class="fa-solid fa-train"></i></b></h2>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/trains/" target="_blank"><i
+                               title="Trains" class="fa-solid fa-train"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Accounts/" target="_blank">REGISTER</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Accounts/login/" target="_blank">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="card header text-center">
+            <h1>INDIAN RAILWAYS</h1>
+            <p>Safety <i class="fa-solid fa-helmet-safety"></i> | Security <i class="fa-solid fa-shield"></i> |
+                Punctuality <i class="fa-solid fa-clock"></i></p>
+        </div>
+
+
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <div class="card m-3 shadow-lg w-100">
+                        <img src="{% static 'train_image_bg.jpg' %}" height="400px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Indian Railways</h5>
+                            <p class="card-text">
+                                India has some of the most spectacular and unforgettable rail journeys in the world.
+                                Here you experience a simple way to find out everything you need to know in one easy
+                                place. There's no better way to enjoy India's outback, cities, coastal towns, and
+                                regional areas in comfort.
+                            </p>
+                            <a href="https://www.irctc.co.in/nget/train-search" class="btn btn-primary"
+                                target="_blank">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card m-3 shadow-lg w-100">
+                        <img src="{% static 'Maharaja_express.jpg' %}" height="400px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Maharaja Express</h5>
+                            <p class="card-text">
+                                Redefining Royalty, Luxury, and Comfort, Maharajas' express takes you on a sojourn to
+                                the era of bygone stately splendour of princely states. Sylvan furnishings, elegant
+                                ambience, and modern amenities are amalgamated for an “Experience Unsurpassed”.
+                            </p>
+                            <a href="https://www.worldwiderailjourneys.com/train/india/maharaja-express/gallery"
+                                class="btn btn-primary" target="_blank">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex">
+                    <div class="card m-3 shadow-lg w-100">
+                        <img src="{% static 'train_image_tour.jpg' %}" height="400px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rail Tour Packages</h5>
+                            <p class="card-text">
+                                IRCTC offers exclusive rail tour packages with confirmed train tickets, sightseeing,
+                                and meals for enchanting destinations like Nilgiri Mountains, Darjeeling, Kullu Manali,
+                                Kashmir, and more. Holiday packages to these destinations are also available.
+                            </p>
+                            <a href="https://www.irctctourism.com/" class="btn btn-primary" target="_blank">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-section">
+                            <h2><b>Check Tickets</b></h2>
+                            <form method="post" action="/available_train/">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label for="from">From Station</label>
+                                    <input type="text" class="form-control" name ="from" placeholder="From">
+                                </div>
+                                <div class="form-group">
+                                    <label for="to">To Station</label>
+                                    <input type="text" class="form-control" name ="to" placeholder="To">
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    <input type="date" class="form-control" name ="date" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Search</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-section">
+                            <h2><b>Check PNR</b></h2>
+                            <form>
+                                <div class="form-group">
+                                    <label for="trainname">Train Name</label>
+                                    <input type="text" class="form-control" id="trainname" placeholder="Train name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="trainno">Train No.</label>
+                                    <input type="text" class="form-control" id="trainno" placeholder="Train No.">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pnr">PNR</label>
+                                    <input type="number" class="form-control" id="pnr" placeholder="PNR" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Check</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <footer class="footer">
+            <p>Customers can use enhanced interface for their IRCTC-related queries!!</p>
+            <p>Customer Care Numbers: 14646 / 08046467999 / 08035734999 (Language: Hindi and English)</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
